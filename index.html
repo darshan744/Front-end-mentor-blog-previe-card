@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: rgb(187, 240, 82);
+      font-family: figtree;
+    }
+    .container{
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      /* text-align: center; */
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      width: 500px;
+      position: absolute;
+      height: 600px;
+      border-radius: 30px;
+    }
+    .logo{
+      /* height: 300px; */
+      width: 90%;
+      margin-top: 25px;
+      /* padding-top: 10px; */
+      border-radius: 14px;
+      margin-bottom: 15px;
+    }
+    .text{
+      display: inline-block;
+      margin-left: -60px;
+    }
+    .tags{
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div class="container">
+      <img class="logo" src="./assets/images/illustration-article.svg" alt="">
+      <div class="text">
+        <p style="margin-top: 30px; padding: 5px;background-color: rgb(187, 240, 92);display: inline; border-radius: 5px;font-weight: bold;padding-left: 14px;padding-right: 14px;">Learning</p>
+         <p>Published 21 Dec 2023</p>
+          <p style="font-weight: bold; font-size: larger;">HTML & CSS foundations</p>
+        <p style="font-size: larger; color: Gray; font-weight: 800;"> These languages are the backbone of every<br> website, defining structure, content,<br> and presentation.
+        </p>
+        <div class="tags">
+          <img src="./assets/images/image-avatar.webp" alt="" style="width: 60px; display: block;">
+          <p style="margin-left: 10px;font-size: large;font-weight: bolder;">
+            Greg Hooper
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a>Darshan</a>.
+  </div>
+</body>
+</html>
